@@ -1,0 +1,198 @@
+<html lang="en">
+
+<head>
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="src/styles.css" />
+
+
+</head>
+
+<body>
+    <div class="box">
+        <div>
+            <form class="searchBar" id="citySearch">
+                <input type="search" id="cityInput" placeholder="Search for city">
+                <button id="searchBtn" type="submit" class="btn">Go</button>
+                <button id="currentLocationBtn" class="btn">Current Location</button>
+            </form>
+        </div>
+        <div>
+            <h3 id="cityName">San Francisco</h3>
+            <h4 id="date"></h4>
+        </div>
+        <div class="todayWeather">
+            <div class="row">
+                <div class="col-4 ">
+                    <p class="todayEmoji">☀️</p>
+                </div>
+                <div class="col d-flex justify-content-center align-items-center">
+                    <p id="ttn" class="todayTempNummber"><strong>88</strong></p>
+                    <span class="units">
+                        <a href id="cTemp"><strong>°C</strong></a><strong>|</strong>
+                        <a href id="fTemp"><strong>℉</strong></a>
+                    </span>
+                </div>
+                <p class="weatherType"><strong>Very Sunny</strong></p>
+                <p class="weatherText">Weather advisory: Stay Hydrated</p>
+            </div>
+            <div>
+                <p class="weatherInfo">
+                    Wind: Mild
+                    <br />
+                    Humidity: 60%
+                    <br />
+                    Sunrise: 5:51 AM
+                    <br />
+                    Sunset: 8:05 PM
+                </p>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Mon</strong></h5>
+                            <h2>🌥️</h2>
+                            <p class="fahrenheit">
+                                <strong>72°/65°</strong>
+                            </p>
+                            <p class="card-text">
+                                <strong>Mostly cloudy</strong>
+
+                                <br />
+                                <br />
+                                Wind: 5mph ESE
+                                <br />
+                                Humidity: 60%
+                                <br />
+                                Sunrise: 5:51 AM
+                                <br />
+                                Sunset: 8:05 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Tue</strong></h5>
+                            <h2>🌤️</h2>
+                            <p class="fahrenheit">
+                                <strong>78°/65°</strong>
+                            </p>
+                            <p class="card-text">
+                                <strong>Partly cloudy</strong>
+                                <br />
+                                <br />
+                                Wind: 2mph SSW
+                                <br />
+                                Humidity: 52%
+                                <br />
+                                Sunrise: 5:54 AM
+                                <br />
+                                Sunset: 8:04 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Wed</strong></h5>
+                            <h2>☀️</h2>
+                            <p class="fahrenheit">
+                                <strong>83°/64°</strong>
+                            </p>
+                            <p class="card-text">
+                                <strong>Sunny</strong>
+                                <br />
+                                <br />
+                                Wind: Mild
+                                <br />
+                                Humidity: 56%
+                                <br />
+                                Sunrise: 5:54 AM
+                                <br />
+                                Sunset: 8:04 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Thurs</strong></h5>
+                            <h2>☁️</h2>
+                            <p class="fahrenheit">
+                                <strong>82°/66°</strong>
+                            </p>
+                            <p class="card-text">
+                                <strong>Mostly Cloudy</strong>
+                                <br />
+                                <br />
+                                Wind: 10mph SE
+                                <br />
+                                Humidity: 54%
+                                <br />
+                                Sunrise: 5:53 AM
+                                <br />
+                                Sunset: 8:05 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Fri</strong></h5>
+                            <h2>☀️</h2>
+                            <p class="fahrenheit">
+                                <strong>86°/66°</strong>
+                            </p>
+                            <p class="card-text">
+                                <strong>Sunny</strong>
+                                <br />
+                                <br />
+                                Wind: Mild
+                                <br />
+                                Humidity: 53%
+                                <br />
+                                Sunrise: 5:55 AM
+                                <br />
+                                Sunset: 8:03 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg">
+                <img src="images/cloudbg.jpg" class="cloudbg" />
+
+            </div>
+
+</body>
+
+<script src="src/index.js"></script>
+
+</html>

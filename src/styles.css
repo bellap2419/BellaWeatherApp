@@ -1,0 +1,152 @@
+.todayTempNummber,
+.weatherText,
+.weatherType,
+.todayEmoji {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.todayTempNummber {
+  font-size: 50px;
+  margin-top: 80px;
+  margin-right: 15px;
+  font-family: "Lexend Tera", sans-serif;
+}
+
+.weatherType {
+  margin-top: -50px;
+}
+
+.weatherText {
+  margin-top: -10px;
+}
+
+.weatherInfo {
+  z-index: 2;
+  margin-left: 775px;
+  margin-top: -120px;
+  color: #fff;
+  position: relative;
+}
+/* Sun Emoki */
+.todayEmoji {
+  font-size: 110px;
+  margin-bottom: -30px;
+  padding-top: 140px;
+  padding-left: 210px;
+}
+
+/* Celcius and Fahrenheit link */
+.units {
+  z-index: 2;
+  margin-right: 325px;
+  margin-top: 50px;
+  font-size: 24px;
+  color: #fff;
+}
+
+/*Search Bar */
+form {
+  position: relative;
+  margin-left: 60%;
+  padding: 40px 25px 10px;
+  z-index: 2;
+}
+/* Container for the cards */
+.box {
+  display: block;
+  height: 680px;
+  margin: auto;
+  margin-top: 30px;
+  padding: 0 40px;
+  width: 80%;
+}
+
+/* Grid */
+.col {
+  display: block;
+  margin: auto;
+  width: 20%;
+  padding-top: 40px;
+  z-index: 2;
+}
+/* Card Title */
+h2,
+h5 {
+  text-align: center;
+  font-weight: 900;
+  z-index: 2;
+}
+/* Center the temp on the cards */
+.fahrenheit {
+  text-align: center;
+  font-family: "Lexend Tera", sans-serif;
+  z-index: 2;
+}
+
+.card-text {
+  margin-top: -20;
+  text-align: center;
+  font-size: 14px;
+}
+.card-title {
+  z-index: 2;
+}
+
+.btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+.btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #fff;
+  color: black;
+  cursor: pointer;
+}
+
+/*Date & Time*/
+h4 {
+  color: fff;
+  z-index: 2;
+  position: relative;
+  margin-left: 20%;
+  margin-bottom: -90px;
+  font-size: 16px;
+}
+
+/*City Name*/
+h3 {
+  color: fff;
+  z-index: 2;
+  position: relative;
+  margin-left: 20%;
+  padding-top: -40px;
+  font-size: 50px;
+}
+
+body {
+  background-color: pink;
+}
+
+/* Background image */
+.cloudbg {
+  position: absolute;
+  z-index: 1;
+  background-image: url(images/cloudbg.jpg);
+  width: 85%;
+  height: 705px;
+  margin-top: -680px;
+  margin-left: -75px;
+}

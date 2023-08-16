@@ -150,3 +150,11 @@ body {
   margin-top: -680px;
   margin-left: -75px;
 }
+.sc {
+  z-index: 2;
+  position: relative;
+  color: #fff;
+  font-size: medium;
+  padding-top: 30px;
+  font-weight: bold;
+}

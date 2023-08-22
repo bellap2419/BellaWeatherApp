@@ -82,14 +82,15 @@ let form = document.querySelector("#citySearch");
 form.addEventListener("submit", search);
 
 function showTemperature(response) {
+  console.log(response.data);
   let cityName = document.querySelector("#cityName");
-  let temp = Math.round(response.data.main.temp);
+  let temp = Math.round(response.data.temperature.current);
   let cityTemp = document.querySelector("#ttn");
   let windElement = document.querySelector("#wind");
-  let humidityElement = document.querySelector("#humidity");
-  windElement.innerHTML = response.data.main.wind;
-  humidityElement.innerHTML = response.data.main.humidity;
-  cityName.innerHTML = response.data.name;
+  let humidityElement = document.querySelector("#humdity");
+  windElement.innerHTML = response.data.wind;
+  humidityElement.innerHTML = response.data.temperature.humidity;
+  cityName.innerHTML = response.data.city;
   cityTemp.innerHTML = `${temp}`;
 }
 
